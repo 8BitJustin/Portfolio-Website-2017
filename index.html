@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- My CSS Stylessheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" data-target='#myCarousel' data-slide-to='0' href="#"><img src="img/jo-logo-white.png" alt="Justin Olson Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto flex-column text-right"> <!-- Setting to margin-left auto aligns the navbar to the right -->
+          <!-- Adding the data target and data slide will set each item to go to that slide -->
+          <a class="nav-item nav-link active" data-target='#myCarousel' data-slide-to='0' href="#">Central<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='1' href="#">Chronicle</a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='2' href="#">Techniques</a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='3' href="#">Ventures</a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='4' href="#">Connect</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Start. Data-wrap false keeps it from cycling -->
+    <div id="myCarousel" class="carousel slide full-screen" data-ride="carousel" data-wrap="false">
+      <div class="carousel-inner">
+        <!-- Central Page -->
+        <div class="carousel-item first active" data-slide-no='0'>
+          <div class="row h-100">
+            <div class="col-md-6 central-left">
+              <div class="central-left-heading">
+                <h1 class="display-4 title-reduce">Justin Olson</h1>
+              </div>
+            </div>
+            <div class="col central-right">
+              <div class="central-right-heading">
+                <h1 class="display-4 title-reduce">Web Design</h1>
+                <h1 class="display-4 title-reduce">Web Development</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chronicle Page -->
+        <div class="carousel-item chronicle" data-slide-no='1'>
+          <div class="jo-title">
+              <h1 class="display-4 title-reduce">Chronicle</h1>
+          </div>
+          <div class="container">
+            <div class="row chron-holder">
+              <div class="col-lg-12 chron-content align-self-center">
+                <div class="row h-100">
+                  <div class="col-md-4 align-self-center text-center">
+                    <img src="img/theboyssolo.jpg" alt="Image of Justin Olson" class="img-fluid rounded-circle profile-image" height="400px">
+                  </div>
+                  <div class="col-md-8 text-center align-self-center chron-text">
+                    <h1 class="display-4 chron-name pb-3 ">That's me, Justin Olson...</h1>
+                    <p class="chron-para-1 lead pt-1">And I love to create something out of absolutely nothing.</p>
+                    <p class="chron-para-2 pt-2 text-left">I live in super sunny Tucson Arizona, and have been designing and developing websites (as well as tinkered with web and mobile applications) for just a couple of years. In this time, I've adapted to coding rather well, and have been able to learn multiple coding languages. Far from being any kind of expert, given any opportunity, I can and will produce an amazing product that will leave anyone involved truly happy.</p>
+                    <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me and even review my resume.</p>
+                    <div class="row">
+                      <div class="col-md-6 mx-auto">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-lg btn-outline-light btn-contact">Contact</button>
+                          <button type="button" class="btn btn-lg btn-outline-light btn-resume">Resume</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Techniques Page -->
+        <div class="carousel-item techniques" data-slide-no='2'>
+          <div class="jo-title">
+                <h1 class="display-4 title-reduce">Techniques</h1>
+            </div>
+          <div class="container tech-holder">
+            <div class="row h-100">
+              <div class="col-md-6 align-self-center tech-desc">
+                <h1>Techniques</h1>
+              </div>
+              <div class="col-md-6 align-self-center tech-graph text-center">
+                <h1>Graphs</h1>
+                <span>HTML</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <span>CSS</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <span>JavaScript</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ventures Page -->
+        <div class="carousel-item ventures" data-slide-no='3'>
+          <div class="row">
+            <div class="jo-title">
+                <h1 class="display-4 title-reduce">Ventures</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connect Page -->
+        <div class="carousel-item connect" data-slide-no='4'>
+          <div class="row">
+            <div class="jo-title">
+                <h1 class="display-4 title-reduce">Connection</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Stops carousel from automatically cycling -->
+    <script>
+      $('.carousel').carousel({
+        interval: false
+      })
+    </script>
+
+    <!-- This removes the active class from the nav-item, and places it on the nav-item that was selected -->
+    <script>
+      $(document).ready(function() {
+        $('.nav-item').click(function() {
+          $('.nav-item').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $('.navbar-brand').click(function() {
+          $('.nav-item').removeClass('active');
+          $('.nav-item:first').addClass('active');
+        });
+      });
+    </script>
+
+    <!-- This moves the nav links down 50px when the button is clicked, and back up when clicked -->
+
+    <script>
+      $(function() {
+        var expanded = false;
+        $('.navbar-toggler').click(function() {
+          if (!expanded) {
+            $('.navbar-nav').css('top', '50px');
+            expanded = true;
+          }
+          else {
+            $('.navbar-nav').css('top', '0px');
+            expanded = false;
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>

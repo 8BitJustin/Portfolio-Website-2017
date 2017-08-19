@@ -1,0 +1,263 @@
+html, body {
+	height: 100%;
+}
+
+/*******************************/
+/*Navbar*/
+/*******************************/
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-nav {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	z-index: 1;
+	font-size: 1.4em;
+	padding-bottom: 10px;
+}
+
+.navbar-brand {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	z-index: 1;
+	text-align: left;
+}
+
+.navbar-brand img {
+	width: 150px;
+}
+
+.navbar .navbar-toggler {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+/*******************************/
+/*Navbar Media Queries*/
+/*******************************/
+
+@media (max-width: 768px) {
+	.navbar-brand img {
+		width: 75px;
+	}
+
+	.navbar-nav {
+		font-size: .9em;
+	}
+}
+
+/*******************************/
+/*Backgrounds*/
+/*******************************/
+
+.central-left {
+	background-image: url('img/arizona60opa.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.central-right {
+	background-color: silver;
+}
+
+.chronicle {
+	background-color: #2f4e6f;
+
+}
+
+.techniques {
+	background-color: lightslategrey;
+	background-image: url('img/hills60Opa.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ventures {
+	background-color: #98B1C4;
+}
+
+.connect {
+	background-color: #C8D7E3;
+}
+
+/*Helps background load properly*/
+
+.carousel-item {
+	height: 100%;
+}
+
+
+
+/*******************************/
+/*Misc*/
+/*******************************/
+
+/*
+The below is from this link:
+https://stackoverflow.com/questions/16350902/bootstrap-carousel-full-screen
+it explains that you want to make sure the img inside the carousel item is set to height and width 100%. You also have to make sure the carousel and any of the .item containers (html, body) are 100%
+*/
+
+	.carousel, .item, .active {
+		height:100%;
+	}
+
+	.carousel-inner {
+		height:100%;
+	}
+
+	/*************************************/
+
+.jo-title {
+	position: absolute;
+	top: 35px;
+	left: 125px;
+}
+
+@media (max-width: 768px) {
+	.jo-title {
+		position: absolute;
+		top: 26px;
+		left: 68px;
+	}
+}
+
+
+/*Central*/
+
+.central-left-heading {
+	position: absolute;
+	top: 50%; left: 90%;
+	transform: translate(-90%, -50%);
+	width: 80%; height: auto;
+	text-align: right;
+	color: silver;
+}
+
+.central-right {
+	color: white;
+}
+
+.central-right-heading {
+	position: absolute;
+	top: 50%; left: 10%;
+	transform: translate(-10%, -50%);
+	width: 80%; height: auto;
+	color: #336699;
+
+}
+
+.central-right-heading h1:nth-child(2) {
+	border-top: 3px solid #ed650e;
+
+}
+
+@media (max-width: 767px) {
+
+	.central-left-heading {
+		position: absolute;
+		top: 100%; left: 50%;
+		transform: translate(-50%, -100%);
+		width: 80%; height: auto;
+		text-align: center;
+		color: silver;
+	}
+
+	.central-right-heading {
+		position: absolute;
+		top: 0%; left: 50%;
+		transform: translate(-50%, 0%);
+		width: 80%; height: auto;
+		text-align: center;
+		color: #336699;
+	}
+
+	.title-reduce {
+		font-size: 2em;
+	}
+
+	.central-right-heading h1:nth-child(2) {
+		margin-top: 0px;
+	}
+
+}
+
+/*Chronicle*/
+
+.chronicle {
+	color: silver;
+}
+
+.chron-holder {
+	height: 100vh;
+}
+
+.chron-content {
+	height: 750px;
+}
+
+.profile-image {
+	border: 4px solid #E15119;
+}
+
+.chron-name {
+	border-bottom: 3px solid #E15119;
+}
+
+.chron-para-1 {
+	font-size: 1.6em;
+}
+
+.btn-outline-light:active {
+	color: #2f4e6f;
+}
+
+.btn-contact, .btn-resume {
+	border-color: #E15119;
+}
+
+@media (max-width: 767px) {
+	.profile-image {
+		height: 200px;
+	}
+
+	.chron-text {
+		margin-top: 20px;
+	}
+}
+
+/*Techniques*/
+
+.techniques {
+	color: white;
+}
+
+.tech-holder {
+	height: 100vh;
+}
+
+.progress-bar {
+	background-color: #E15119;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
