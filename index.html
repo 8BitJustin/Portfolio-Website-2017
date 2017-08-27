@@ -10,6 +10,10 @@
 
     <!-- My CSS Stylessheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
   </head>
   <body>
 
@@ -22,11 +26,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto flex-column text-center"> <!-- Setting to margin-left auto aligns the navbar to the right -->
           <!-- Adding the data target and data slide will set each item to go to that slide -->
-          <a class="nav-item nav-link active" data-target='#myCarousel' data-slide-to='0' href="#">Central<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='1' href="#">Chronicle</a>
-          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='2' href="#">Techniques</a>
-          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='3' href="#">Ventures</a>
-          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='4' href="#">Connect</a>
+          <a class="nav-item nav-link active" data-target='#myCarousel' data-slide-to='0' href="#"><i class="fa fa-home fa-2x"></i><span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='1' href="#"><i class="fa fa-book fa-2x"></i></a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='2' href="#"><i class="fa fa-code fa-2x"></i></a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='3' href="#"><i class="fa fa-desktop fa-2x"></i></a>
+          <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='4' href="#"><i class="fa fa-comments fa-2x"></i></a>
         </div>
       </div>
     </nav>
@@ -68,14 +72,11 @@
                     <h1 class="display-4 chron-name pb-3 ">That's me, Justin Olson...</h1>
                     <p class="chron-para-1 lead pt-1">And I love to create something out of absolutely nothing.</p>
                     <p class="chron-para-2 pt-2 text-left">I live in super sunny Tucson Arizona, and have been designing and developing websites (as well as tinkered with web and mobile applications) for just a couple of years. In this time, I've adapted to coding rather well, and have been able to learn multiple coding languages. Far from being any kind of expert, given any opportunity, I can and will produce an amazing product that will leave anyone involved truly happy.</p>
-                    <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me and even review my resume.</p>
-                    <div class="row">
-                      <div class="col-md-6 mx-auto">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                          <button type="button" class="btn btn-lg btn-outline-light btn-contact">Contact</button>
-                          <button type="button" class="btn btn-lg btn-outline-light btn-resume">Resume</button>
-                        </div>
-                      </div>
+                    <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me, check out my GitHub and even review my resume.</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <a class="btn btn-lg btn-outline-light btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</button>
+                      <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light btn-contact" target="_blank">GitHub</a>
+                      <button type="button" class="btn btn-lg btn-outline-light btn-resume">Resume</button>
                     </div>
                   </div>
                 </div>
@@ -87,51 +88,18 @@
         <!-- Techniques Page -->
         <div class="carousel-item techniques" data-slide-no='2'>
           <div class="jo-title">
-                <h1 class="display-4 title-reduce">Techniques</h1>
-            </div>
+            <h1 class="display-4 title-reduce">Techniques</h1>
+          </div>
           <div class="container tech-holder">
             <div class="row h-100">
-              <div class="row">
-                <div class="col-md-8 mx-auto align-self-center tech-disc">
-                  <h1 class="tech-h1 display-4 pb-3 text-center">My time coding.</h1>
-                  <p class="tech-para-1 lead pt-1 text-center">It's a short , but on-going story.</p>
-                  <p class="tech-para-2">I started with <span class="badge">HTML</span> and <span class="badge">CSS</span> to gain a basic understanding of the building blocks and styling of how a website is created. From there, I moved onto <span class="badge">JavaScript</span>, and I've also received a good understanding of <span class="badge">Python</span>. Currently, I'm honing on JS and <span class="badge">jQuery</span>, as I want to gain a solid front-end structure before pushing into <span class="badge">PHP</span> and back-end, in which my goal is to become a full-stack developer.</p>
-                  <p class="tech-para-3 text-center">Here, is how I feel I stack up with each language I've touched.</p>
-                </div>
+              <div class="col-md-6 align-self-center graph-div">
+                <img src="img/graph07.png" alt="" class="img-fluid graph" >
               </div>
-              <div class="row w-100 mx-auto">
-                <div class="col-md-10 mx-auto graph-holder">
-                  <div class="row">
-                    <div class="col-sm-6 left-three text-center">
-                      <p class="lead lang-title pt-3">HTML</p>
-                      <div class="progress prog-margin">
-                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                      </div>
-                      <p class="lead lang-title">CSS</p>
-                      <div class="progress prog-margin">
-                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                      </div>
-                      <p class="lead lang-title">Bootstrap 3/4</p>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 right-three text-center pagination-centered">
-                      <p class="lead lang-title pt-3">JavaScript</p>
-                      <div class="progress prog-margin">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                      </div>
-                      <p class="lead lang-title">jQuery</p>
-                      <div class="progress prog-margin">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                      </div>
-                      <p class="lead lang-title">Python</p>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6 align-self-center techdisc-div">
+                <h3 class="text-center display-4 tech-header pb-3">How I rate myself.</h3>
+                <p class="tech-para">In the short 2.5 years I've been doing this, I've been able to mess with multiple languages: HTML, CSS, Bootstrap (library), JavaScript, jQuery (library), and Python.</p>
+                <p class="tech-para">I have a strong foundation with HTML, CSS, and Bootstrap, and feel comfortable with JavaScript and Python. jQuery is rather simple, I just haven't had much time with it, though that is currently changing.</p>
+                <p class="tech-para">At this time, I'm studying JavaScript and jQuery, and plan to move to PHP afterwards, as my goal is to become a fullstack developer. Basically, I want to know as much as I can about front-end as well as back-end developing.</p>
               </div>
             </div>
           </div>
@@ -139,18 +107,43 @@
 
         <!-- Ventures Page -->
         <div class="carousel-item ventures" data-slide-no='3'>
-          <div class="row">
-            <div class="jo-title">
-                <h1 class="display-4 title-reduce">Ventures</h1>
-            </div>
+          <div class="jo-title">
+              <h1 class="display-4 title-reduce">Ventures</h1>
           </div>
         </div>
 
         <!-- Connect Page -->
         <div class="carousel-item connect" data-slide-no='4'>
-          <div class="row">
-            <div class="jo-title">
-                <h1 class="display-4 title-reduce">Connection</h1>
+          <div class="jo-title">
+              <h1 class="display-4 title-reduce">Connection</h1>
+          </div>
+          <div class="container connection-container">
+            <div class="row h-100">
+              <div class="col-md-6 mx-auto align-self-center">
+                <div class="col-md-12">
+                  <h1 class="display-4 text-center pb-3 connect-header">So, that's me in a nutshell.</h1>
+                  <p class="con-para pb-3">I'm ready do move forward to provide an excellent product. Please feel free to reach out by using the form below, or any of the following links.</p>
+                  <div class="connect-icons text-center pb-5">
+                    <i class="fa fa-github fa-4x" id="git" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square fa-4x" id="link" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-4x" id="twit" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <form>
+                  <div class="form-group name-input">
+                    <input type="text" class="form-control" id="name" placeholder="First, your name...">
+                  </div>
+                  <div class="form-group email-input">
+                    <input type="text" class="form-control" id="email" placeholder="Then your email...">
+                  </div>
+                  <div class="form-group message-input">
+                    <textarea class="form-control" id="message" placeholder="And finally, what would you like to say?" rows="3"></textarea>
+                  </div>
+                  <div class="text-center submit-div">
+                    <button type="button" class="btn btn-lg btn-outline-light submit-btn"><i class="fa fa-angle-double-right fa-2x"></i></button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -170,6 +163,8 @@
       })
     </script>
 
+    <!-- Below are scripts that align the active icon properly -->
+
     <!-- This removes the active class from the nav-item, and places it on the nav-item that was selected -->
     <script>
       $(document).ready(function() {
@@ -179,8 +174,9 @@
         });
       });
     </script>
-
-    <script>
+    
+    <!-- When the navbar-brand is selected, it will make the home icon active -->
+    <script>  
       $(document).ready(function() {
         $('.navbar-brand').click(function() {
           $('.nav-item').removeClass('active');
@@ -188,6 +184,18 @@
         });
       });
     </script>
+
+    <!-- When the contact button is selected, it will make the contact icon active -->
+    <script>
+      $(document).ready(function() {
+        $('.btn-contact').click(function() {
+          $('.nav-item').removeClass('active');
+          $('.nav-item:nth-child(5)').addClass('active');
+        });
+      });
+    </script>
+
+    <!-- End icon selection -->
 
     <!-- This moves the nav links down 50px when the button is clicked, and back up when clicked -->
 

@@ -94,6 +94,10 @@ html, body {
 
 .connect {
 	background-color: #C8D7E3;
+	background-image: url('img/mountain-sun.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /*Helps background load properly*/
@@ -252,6 +256,10 @@ h1:first-child {
 	font-size: 1.4em;
 }
 
+.btn-outline-light:hover {
+	color: #2f4e6f;
+}
+
 .btn-outline-light:active {
 	color: #2f4e6f;
 }
@@ -305,85 +313,106 @@ h1:first-child {
 	height: 100vh;
 }
 
-.tech-disc {
-	margin-top: 50px;
-}
-
-.progress-bar {
-	background-color: #E15119;
-}
-
-.tech-h1 {
+.tech-header {
 	border-bottom: 2px solid #E15119;
-}
-
-.tech-h1, .graph-h1 {
 	font-size: 2.3em;
 }
 
-.graph-h1 {
-	margin-bottom: -10px;
-}
-
-.tech-para-1 {
-	font-size: 1.4em;
-}
-
-.badge {
-	color: lightslategrey;
-	background-color: white;
-}
-
-.lang-title {
-	margin: 0;
-	padding-bottom: 10px;
-}
-
-.prog-margin {
-	margin-bottom: 12px;
-}
-
-.graph-holder {
-	background-color: rgba(51,102,153, 0.5);
-	height: 240px;
-	border: 2px solid white;
-	border-radius: 20px;
-}
-
-@media (max-width: 1337px) {
-	.tech-disc {
-		width: 90%
+@media (max-width: 767px) {
+	.tech-header {
+		font-size: 1.5em;
 	}
+
+	.tech-para {
+		font-size: 0.7em;
+	}
+
+	.graph-div {
+		margin-top: 70px;
+	}
+}
+
+/*Connection*/
+
+.connect {
+	color: white;
+}
+
+.connection-container {
+	height: 100vh;
+}
+
+#link {
+	padding: 0 30px;
+}
+
+.submit-btn {
+	border-radius: 100%;
+	background-color: rgba(200, 215, 227, 0.5);
+}
+
+#name, #email, #message {
+	background-color: rgba(200, 215, 227, 0.5);
+	color: white;
+}
+
+#name:focus, #email:focus, #message:focus {
+	border-color: #E15119;
+}
+
+.form-control {
+	border-color: white;
+	color: white;
+}
+
+/*Alters placeholder text color*/
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: white !important;  
 }
 
 @media (max-width: 767px) {
-
-	.tech-disc, .graph-holder {
-		width: 80%;
+	.connect-header {
+		font-size: 1.5em;
 	}
 
-	.tech-h1, .graph-h1 {
-		font-size: 1.7em;
-	}
-	
-	.tech-para-1 {
-		font-size: 1.4em;
+	.con-para {
+		font-size: 0.7em;
 	}
 
-	.tech-para-2 {
-		font-size: 0.8em;
+	.connect-icons {
+		font-size: 0.7em;
 	}
-}
 
-@media (max-width: 575px) {
-	.left-three, .right-three {
-		width: 50%;
+	.email-input, .message-input, .submit-div {
+		padding-top: 10px;
 	}
 }
-
-
-
-
-
-
-
