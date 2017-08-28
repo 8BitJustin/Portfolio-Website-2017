@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- My CSS Stylessheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="afcss/font-awesome.min.css">
 
   </head>
   <body>
@@ -26,6 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto flex-column text-center"> <!-- Setting to margin-left auto aligns the navbar to the right -->
           <!-- Adding the data target and data slide will set each item to go to that slide -->
+          <!-- Nav is set to icons from fontawesome.com -->
           <a class="nav-item nav-link active" data-target='#myCarousel' data-slide-to='0' href="#"><i class="fa fa-home fa-2x"></i><span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='1' href="#"><i class="fa fa-book fa-2x"></i></a>
           <a class="nav-item nav-link" data-target='#myCarousel' data-slide-to='2' href="#"><i class="fa fa-code fa-2x"></i></a>
@@ -38,14 +39,16 @@
     <!-- Carousel Start. Data-wrap false keeps it from cycling -->
     <div id="myCarousel" class="carousel slide full-screen" data-ride="carousel" data-wrap="false">
       <div class="carousel-inner">
-        <!-- Central Page -->
+        <!-- Central/Home Page -->
         <div class="carousel-item first active" data-slide-no='0'>
           <div class="row h-100">
+            <!-- Left side of central page -->
             <div class="col-md-6 central-left">
               <div class="central-left-heading">
                 <h1 class="display-4 title-reduce">Justin Olson</h1>
               </div>
             </div>
+            <!-- Right side of central page -->
             <div class="col central-right">
               <div class="central-right-heading">
                 <h1 class="display-4 title-reduce">Web Design</h1>
@@ -56,11 +59,13 @@
           </div>
         </div>
 
-        <!-- Chronicle Page -->
+        <!-- Chronicle/About Page -->
         <div class="carousel-item chronicle" data-slide-no='1'>
+          <!-- Title of each slide/page -->
           <div class="jo-title">
               <h1 class="display-4 title-reduce">Chronicle</h1>
           </div>
+          <!-- Chronicle container -->
           <div class="container">
             <div class="row chron-holder">
               <div class="col-lg-12 chron-content align-self-center">
@@ -73,6 +78,7 @@
                     <p class="chron-para-1 lead pt-1">And I love to create something out of absolutely nothing.</p>
                     <p class="chron-para-2 pt-2 text-left">I live in super sunny Tucson Arizona, and have been designing and developing websites (as well as tinkered with web and mobile applications) for just a couple of years. In this time, I've adapted to coding rather well, and have been able to learn multiple coding languages. Far from being any kind of expert, given any opportunity, I can and will produce an amazing product that will leave anyone involved truly happy.</p>
                     <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me, check out my GitHub and even review my resume.</p>
+                    <!-- Buttons for contact, github, and resume -->
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a class="btn btn-lg btn-outline-light btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</button>
                       <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light btn-contact" target="_blank">GitHub</a>
@@ -85,16 +91,19 @@
           </div>
         </div>
 
-        <!-- Techniques Page -->
+        <!-- Techniques/Skills Page -->
         <div class="carousel-item techniques" data-slide-no='2'>
           <div class="jo-title">
             <h1 class="display-4 title-reduce">Techniques</h1>
           </div>
+          <!-- Techniques container -->
           <div class="container tech-holder">
             <div class="row h-100">
+              <!-- Graph div, graph is an png file -->
               <div class="col-md-6 align-self-center graph-div">
                 <img src="img/graph07.png" alt="" class="img-fluid graph" >
               </div>
+              <!-- Techniques description -->
               <div class="col-md-6 align-self-center techdisc-div">
                 <h3 class="text-center display-4 tech-header pb-3">How I rate myself.</h3>
                 <p class="tech-para">In the short 2.5 years I've been doing this, I've been able to mess with multiple languages: HTML, CSS, Bootstrap (library), JavaScript, jQuery (library), and Python.</p>
@@ -105,30 +114,33 @@
           </div>
         </div>
 
-        <!-- Ventures Page -->
+        <!-- Ventures/Projects Page -->
         <div class="carousel-item ventures" data-slide-no='3'>
           <div class="jo-title">
               <h1 class="display-4 title-reduce">Ventures</h1>
           </div>
         </div>
 
-        <!-- Connect Page -->
+        <!-- Connection/Contact Page -->
         <div class="carousel-item connect" data-slide-no='4'>
           <div class="jo-title">
               <h1 class="display-4 title-reduce">Connection</h1>
           </div>
+          <!-- Connection container -->
           <div class="container connection-container">
             <div class="row h-100">
               <div class="col-md-6 mx-auto align-self-center">
                 <div class="col-md-12">
                   <h1 class="display-4 text-center pb-3 connect-header">So, that's me in a nutshell.</h1>
                   <p class="con-para pb-3">I'm ready do move forward to provide an excellent product. Please feel free to reach out by using the form below, or any of the following links.</p>
+                  <!-- Icons for social links -->
                   <div class="connect-icons text-center pb-5">
-                    <i class="fa fa-github fa-4x" id="git" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin-square fa-4x" id="link" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square fa-4x" id="twit" aria-hidden="true"></i>
+                    <a href="https://github.com/8BitJustin" class="social-icon" target="_blank"><i class="fa fa-github fa-4x" id="git" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3Bflv5o%2BT1TTqQn3enmx6ieQ%3D%3D" class="social-icon" target="_blank"><i class="fa fa-linkedin-square fa-4x" id="link" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/8bitJustin" class="social-icon" target="_blank"><i class="fa fa-twitter-square fa-4x" id="twit" aria-hidden="true"></i></a>
                   </div>
                 </div>
+                <!-- Contact form -->
                 <form>
                   <div class="form-group name-input">
                     <input type="text" class="form-control" id="name" placeholder="First, your name...">
@@ -165,39 +177,39 @@
 
     <!-- Below are scripts that align the active icon properly -->
 
-    <!-- This removes the active class from the nav-item, and places it on the nav-item that was selected -->
-    <script>
-      $(document).ready(function() {
-        $('.nav-item').click(function() {
-          $('.nav-item').removeClass('active');
-          $(this).addClass('active');
+      <!-- This removes the active class from the nav-item, and places it on the nav-item that was selected -->
+      <script>
+        $(document).ready(function() {
+          $('.nav-item').click(function() {
+            $('.nav-item').removeClass('active');
+            $(this).addClass('active');
+          });
         });
-      });
-    </script>
-    
-    <!-- When the navbar-brand is selected, it will make the home icon active -->
-    <script>  
-      $(document).ready(function() {
-        $('.navbar-brand').click(function() {
-          $('.nav-item').removeClass('active');
-          $('.nav-item:first').addClass('active');
+      </script>
+      
+      <!-- When the navbar-brand is selected, it will make the home icon active -->
+      <script>  
+        $(document).ready(function() {
+          $('.navbar-brand').click(function() {
+            $('.nav-item').removeClass('active');
+            $('.nav-item:first').addClass('active');
+          });
         });
-      });
-    </script>
+      </script>
 
-    <!-- When the contact button is selected, it will make the contact icon active -->
-    <script>
-      $(document).ready(function() {
-        $('.btn-contact').click(function() {
-          $('.nav-item').removeClass('active');
-          $('.nav-item:nth-child(5)').addClass('active');
+      <!-- When the contact button is selected, it will make the contact icon active -->
+      <script>
+        $(document).ready(function() {
+          $('.btn-contact').click(function() {
+            $('.nav-item').removeClass('active');
+            $('.nav-item:nth-child(5)').addClass('active');
+          });
         });
-      });
-    </script>
+      </script>
 
     <!-- End icon selection -->
 
-    <!-- This moves the nav links down 50px when the button is clicked, and back up when clicked -->
+    <!-- This moves the nav links down 50px when the button is clicked, and back up when clicked (for mobile/smaller resolutions) -->
 
     <script>
       $(function() {

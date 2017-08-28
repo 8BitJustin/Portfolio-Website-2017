@@ -1,0 +1,467 @@
+html, body {
+	height: 100%;
+}
+
+/*******************************/
+/*Navbar*/
+/*******************************/
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-nav {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	z-index: 1;
+	font-size: 1.4em;
+	padding-bottom: 10px;
+}
+
+.navbar-brand {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	z-index: 1;
+	text-align: left;
+}
+
+.navbar-brand img {
+	width: 150px;
+}
+
+.navbar .navbar-toggler {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+@media (max-width: 991px) { /*Adds background for mobile*/
+	.navbar-nav {
+		background-color: rgba(47,78,111, 0.4);
+		border-radius: 5px;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-brand img {
+		width: 75px;
+	}
+
+	.navbar-nav {
+		font-size: .9em;
+	}
+}
+
+
+
+/*******************************/
+/*Backgrounds*/
+/*******************************/
+
+/*Central*/
+
+.central-left {
+	background-image: url('../img/arizona60opa.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.central-right {
+	background-color: silver;
+}
+
+/*Chronicle*/
+
+.chronicle {
+	background-color: #2f4e6f;
+
+}
+
+/*Techniques*/
+
+.techniques {
+	background-color: lightslategrey;
+	background-image: url('../img/hills60Opa.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Ventures*/
+
+.ventures {
+	background-color: #98B1C4;
+}
+
+/*Connection*/
+
+.connect {
+	background-color: #C8D7E3;
+	background-image: url('../img/mountain-sun.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Helps backgrounds load properly*/
+
+.carousel-item {
+	height: 100%;
+}
+
+
+
+/*******************************/
+/*Misc*/
+/*******************************/
+
+/*
+The below is from this link:
+https://stackoverflow.com/questions/16350902/bootstrap-carousel-full-screen
+it explains that you want to make sure the img inside the carousel item is
+set to height and width 100%. You also have to make sure the carousel and
+any of the .item containers (html, body) are 100%
+*/
+
+.carousel, .item, .active {
+	height:100%;
+}
+
+.carousel-inner {
+	height:100%;
+}
+
+/*************************************/
+
+/*Titles for slides*/
+
+.jo-title {
+	position: absolute;
+	top: 35px;
+	left: 125px;
+}
+
+@media (max-width: 768px) {
+	.jo-title {
+		position: absolute;
+		top: 26px;
+		left: 68px;
+	}
+}
+
+.title-reduce {
+	font-size: 2.3em;
+}
+
+@media (max-width: 768px) {
+	.title-reduce {
+		font-size: 1.8em;
+	}
+
+	.title-reduce:nth-child(3) {
+		border-top: 2px solid #ed650e;
+	}
+}
+
+/*Colors*/
+
+	/*Shades of orange*/
+	/*E08226 Lightest of Oranges on page (far right of graph and social buttons)*/
+	/*E07226*/
+	/*E06226*/
+	/*E05326*/
+	/*E04226*/
+	/*E03326 Darkest of Oranges on page (far left of graph)*/
+
+
+
+/*******************************/
+/*Page Alterations*/
+/*******************************/
+
+/*Central*/
+
+.central-left-heading {
+	position: absolute;
+	top: 50%; left: 90%;
+	transform: translate(-90%, -50%);
+	width: 80%; height: auto;
+	text-align: right;
+	color: silver;
+}
+
+.central-right {
+	color: white;
+}
+
+.central-right-heading {
+	position: absolute;
+	top: 50%; left: 10%;
+	transform: translate(-10%, -50%);
+	width: 80%; height: auto;
+	color: #336699;
+}
+
+h1:first-child {
+	margin-bottom: 5px;
+}
+
+.hr-border {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ed650e;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    width: 440px;
+}
+
+@media (max-width: 1064px) {
+	.hr-border {
+		width: 320px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.central-left-heading {
+		position: absolute;
+		top: 100%; left: 50%;
+		transform: translate(-50%, -100%);
+		width: 80%; height: auto;
+		text-align: center;
+		color: silver;
+	}
+
+	.central-right-heading {
+		position: absolute;
+		top: 0%; left: 50%;
+		transform: translate(-50%, 0%);
+		width: 60%; height: auto;
+		text-align: center;
+		color: #336699;
+	}
+
+
+
+	.hr-border {
+		display: none;
+	}
+
+}
+
+/*Chronicle*/
+
+.chronicle {
+	color: silver;
+}
+
+.chron-holder {
+	height: 100vh;
+}
+
+.profile-image {
+	border: 2px solid #E15119;
+}
+
+.chron-name {
+	border-bottom: 2px solid #E15119;
+	font-size: 2.3em;
+}
+
+.chron-para-1 {
+	font-size: 1.4em;
+}
+
+.btn-outline-light:hover {
+	color: #2f4e6f;
+}
+
+.btn-outline-light:active {
+	color: #2f4e6f;
+}
+
+.btn-contact, .btn-resume {
+	border-color: #E15119;
+}
+
+@media (max-width: 767px) {
+	.chron-content {
+		height: 500px;
+
+	}
+
+	.profile-image {
+		height: 140px;
+	}
+
+	.chron-name {
+		margin-top: 20px;
+		font-size: 1.7em;
+	}
+
+	.chron-para-1 {
+		font-size: 1.3em;
+	}
+
+	.chron-para-2, .chron-para-3 {
+		font-size: 0.8em;
+	}
+
+	.btn-group [type='button'] {
+		font-size: 0.7em;
+	}
+
+}
+
+@media (max-width: 525px) {
+	.profile-image {
+		height: 100px;
+	}
+}
+
+/*Techniques*/
+
+.techniques {
+	color: white;
+}
+
+.tech-holder {
+	height: 100vh;
+}
+
+.tech-header {
+	border-bottom: 2px solid #E15119;
+	font-size: 2.3em;
+}
+
+@media (max-width: 767px) {
+	.tech-header {
+		font-size: 1.5em;
+	}
+
+	.tech-para {
+		font-size: 0.7em;
+	}
+
+	.graph-div {
+		margin-top: 70px;
+	}
+}
+
+/*Ventures*/
+
+/*Connection*/
+
+.connect {
+	color: white;
+}
+
+.connection-container {
+	height: 100vh;
+}
+
+.connect-header {
+		font-size: 2.3em;
+	}
+
+#link {
+	padding: 0 30px;
+}
+
+/* unvisited link */
+.connect-icons a:link {
+    color: white;
+}
+
+/* visited link */
+.connect-icons a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.connect-icons a:hover {
+    color: #E08226;
+}
+
+/* selected link */
+.connect-icons a:active {
+    color: #E05326;
+}
+
+#name, #email, #message {
+	background-color: rgba(200, 215, 227, 0.5);
+	color: white;
+}
+
+#name:focus, #email:focus, #message:focus {
+	border-color: #E15119;
+}
+
+.form-control {
+	border-color: white;
+	color: white;
+}
+
+.submit-btn {
+	border-radius: 100%;
+	background-color: rgba(200, 215, 227, 0.5);
+}
+
+/*Alters placeholder for form text color*/
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: white !important;  
+}
+
+@media (max-width: 767px) {
+	.connect-header {
+		font-size: 1.5em;
+	}
+
+	.con-para {
+		font-size: 0.7em;
+	}
+
+	.connect-icons {
+		font-size: 0.7em;
+	}
+
+	.email-input, .message-input, .submit-div {
+		padding-top: 10px;
+	}
+}
