@@ -70,11 +70,11 @@
             <div class="row chron-holder">
               <div class="col-lg-12 chron-content align-self-center">
                 <div class="row h-100">
-                  <div class="col-md-4 align-self-center text-center">
-                    <img src="img/theboyssolo.jpg" alt="Image of Justin Olson" class="img-fluid rounded-circle profile-image" height="300px">
+                  <div class="col-5 col-md-4 align-self-center mx-auto text-center">
+                    <img src="img/theboyssolo.jpg" alt="Image of Justin Olson, photo by MC Photography" class="img-fluid rounded-circle profile-image" height="300px">
                   </div>
-                  <div class="col-xl-8 col-md-7 text-center align-self-center chron-text">
-                    <h1 class="display-4 chron-name pb-3 ">That's me, Justin Olson...</h1>
+                  <div class="col-10 col-md-7 text-center align-self-center mx-auto chron-text">
+                    <h1 class="display-4 chron-name pb-3 ">Hiya, I'm Justin...</h1>
                     <p class="chron-para-1 lead pt-1">And I love to create something out of absolutely nothing.</p>
                     <p class="chron-para-2 pt-2 text-left">I live in super sunny Tucson Arizona, and have been designing and developing websites (as well as tinkered with web and mobile applications) for just a couple of years. In this time, I've adapted to coding rather well, and have been able to learn multiple coding languages. Far from being any kind of expert, given any opportunity, I can and will produce an amazing product that will leave anyone involved truly happy.</p>
                     <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me, check out my GitHub and even review my resume.</p>
@@ -100,13 +100,13 @@
           <div class="container tech-holder">
             <div class="row h-100">
               <!-- Graph div, graph is an png file -->
-              <div class="col-md-6 align-self-center graph-div">
+              <div class="col-10 col-md-6 align-self-center mx-auto graph-div">
                 <img src="img/graph07.png" alt="" class="img-fluid graph" >
               </div>
               <!-- Techniques description -->
-              <div class="col-md-6 align-self-center techdisc-div">
+              <div class="col-10 col-md-6 align-self-center mx-auto techdisc-div">
                 <h3 class="text-center display-4 tech-header pb-3">How I rate myself.</h3>
-                <p class="tech-para">In the short 2.5 years I've been doing this, I've been able to mess with multiple languages: HTML, CSS, Bootstrap (library), JavaScript, jQuery (library), and Python.</p>
+                <p class="tech-para">In the short 2.5 years I've been doing this, I've been able to mess with multiple languages: HTML, CSS, Bootstrap (library), JavaScript, jQuery (library), and Python. I have experience with Photoshop and Illustrator also, and I use Sublime Text 3 to write my code.</p>
                 <p class="tech-para">I have a strong foundation with HTML, CSS, and Bootstrap, and feel comfortable with JavaScript and Python. jQuery is rather simple, I just haven't had much time with it, though that is currently changing.</p>
                 <p class="tech-para">At this time, I'm studying JavaScript and jQuery, and plan to move to PHP afterwards, as my goal is to become a fullstack developer. Basically, I want to know as much as I can about front-end as well as back-end developing.</p>
               </div>
@@ -129,10 +129,10 @@
           <!-- Connection container -->
           <div class="container connection-container">
             <div class="row h-100">
-              <div class="col-md-6 mx-auto align-self-center">
+              <div class="col-10 col-md-6 mx-auto align-self-center">
                 <div class="col-md-12">
                   <h1 class="display-4 text-center pb-3 connect-header">So, that's me in a nutshell.</h1>
-                  <p class="con-para pb-3">I'm ready do move forward to provide an excellent product. Please feel free to reach out by using the form below, or any of the following links.</p>
+                  <p class="con-para pb-3">I'm ready to move forward to provide an excellent product. Please feel free to reach out by using the form below, or any of the following links.</p>
                   <!-- Icons for social links -->
                   <div class="connect-icons text-center pb-5">
                     <a href="https://github.com/8BitJustin" class="social-icon" target="_blank"><i class="fa fa-github fa-4x" id="git" aria-hidden="true"></i></a>
@@ -141,19 +141,21 @@
                   </div>
                 </div>
                 <!-- Contact form -->
-                <form>
+                <form method="post" action="send_email_form.php">
                   <div class="form-group name-input">
-                    <input type="text" class="form-control" id="name" placeholder="First, your name...">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="First, your name...">
                   </div>
                   <div class="form-group email-input">
-                    <input type="text" class="form-control" id="email" placeholder="Then your email...">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Then your email...">
                   </div>
                   <div class="form-group message-input">
-                    <textarea class="form-control" id="message" placeholder="And finally, what would you like to say?" rows="3"></textarea>
+                    <textarea class="form-control" name="message" id="message" placeholder="And finally, what would you like to say?" rows="3"></textarea>
                   </div>
+
                   <div class="text-center submit-div">
-                    <button type="button" class="btn btn-lg btn-outline-light submit-btn"><i class="fa fa-angle-double-right fa-2x"></i></button>
+                    <button type="submit" value="Submit" class="btn btn-lg btn-outline-light submit-btn"><i class="fa fa-angle-double-right fa-2x"></i></button>
                   </div>
+
                 </form>
               </div>
             </div>
