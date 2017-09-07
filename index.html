@@ -14,6 +14,8 @@
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="afcss/font-awesome.min.css">
 
+
+
   </head>
   <body>
 
@@ -71,7 +73,7 @@
               <div class="col-lg-12 chron-content align-self-center">
                 <div class="row h-100">
                   <div class="col-5 col-md-4 align-self-center mx-auto text-center">
-                    <img src="img/theboyssolo.jpg" alt="Image of Justin Olson, photo by MC Photography" class="img-fluid rounded-circle profile-image" height="300px">
+                    <img src="img/justin_image.jpg" alt="Image of Justin Olson, photo by MC Photography" class="img-fluid rounded-circle profile-image" height="300px">
                   </div>
                   <div class="col-10 col-md-7 text-center align-self-center mx-auto chron-text">
                     <h1 class="display-4 chron-name pb-3 ">Hiya, I'm Justin...</h1>
@@ -80,9 +82,9 @@
                     <p class="chron-para-3 pt-2 text-left">I hope you enjoy the rest of what my simple site has to offer. Please feel free to contact me, check out my GitHub and even review my resume.</p>
                     <!-- Buttons for contact, github, and resume -->
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <a class="btn btn-lg btn-outline-light btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</button>
-                      <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light btn-contact" target="_blank">GitHub</a>
-                      <button type="button" class="btn btn-lg btn-outline-light btn-resume">Resume</button>
+                      <a class="btn btn-lg btn-outline-light" id="btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</a>
+                      <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light" id="btn-github" target="_blank">GitHub</a>
+                      <button type="button" class="btn btn-lg btn-outline-light" id="btn-resume">Resume</button>
                     </div>
                   </div>
                 </div>
@@ -97,11 +99,11 @@
             <h1 class="display-4 title-reduce">Techniques</h1>
           </div>
           <!-- Techniques container -->
-          <div class="container tech-holder">
+          <div class="container tech-holder h-100">
             <div class="row h-100">
               <!-- Graph div, graph is an png file -->
               <div class="col-10 col-md-6 align-self-center mx-auto graph-div">
-                <img src="img/graph07.png" alt="" class="img-fluid graph" >
+                <img src="img/skill_graph.png" alt="" class="img-fluid graph" >
               </div>
               <!-- Techniques description -->
               <div class="col-10 col-md-6 align-self-center mx-auto techdisc-div">
@@ -118,6 +120,51 @@
         <div class="carousel-item ventures" data-slide-no='3'>
           <div class="jo-title">
               <h1 class="display-4 title-reduce">Ventures</h1>
+          </div>
+          <!-- Contains all content of page -->
+          <div class="container venture-holder">
+            <div class="row h-100">
+              <div class="align-self-center">
+                <div class="row align-self-center">
+                  <div class="col-8 col-md-6 mx-auto venture-description">
+                    <h1 class="display-4 vent-header text-center pb-3">Some of my work.</h1>
+                    <p class="vent-para mb-5">My projects can vary from website to web application, and from being live to just being a demo I thought up. As I haven't done much contracted work, this is a small list, but that doesn't stop me from creating web pages as often as I can, and placing them here for all to view.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 mx-auto project" id="item-1">
+                    <div class="col-12 inner-project-div" id="item-1-inner">
+                      <h4 class="project-header lead text-center font-weight-bold">The JRO Assistance Form</h4>
+                      <p class="project-para lead px-3">This was created for an online support team. One page, just takes information that is input, and creates a 'block' of information to present to Senior leadership for assistance.</p>
+                      <p class="project-para lead px-3">Also gives a random animal image in the background upon reload.</p>
+                      <div class="website-links text-center">
+                        <div class="btn-group" role="group" aria-label="Site Links">
+                          <a class="btn btn-outline-light btn-projects" href="http://jroassistanceform.x10host.com/" target="_blank">Website</a>
+                          <a class="btn btn-outline-light btn-projects" href="https://github.com/8BitJustin/JRO-Assistance-Form" target="_blank">Github</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mx-auto project" id="item-2">
+                    <div class="col-12 inner-project-div" id="item-2-inner">
+                      <h4 class="project-header lead text-center font-weight-bold">AZ Tax and Business</h4>
+                      <p class="project-para lead px-3">As my step-mother owns her on tax business, it only seemed right that I put together a website for her. With the assistance of Bootstrap, I was able to put this together in less than a week. Although not 'live', it can still be viewed at the link below.</p>
+                      <div class="website-links text-center">
+                        <div class="btn-group" role="group" aria-label="Site Links">
+                          <a class="btn btn-outline-light btn-projects" href="http://formtestjro.x10host.com/" target="_blank">Website</a>
+                          <a class="btn btn-outline-light btn-projects" href="https://github.com/8BitJustin/Tax-Site-2017" target="_blank">Github</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mx-auto project" id="item-3">
+                    <div class="col-12 inner-project-div" id="item-3-inner">
+                      <h4 class="project-header lead text-center font-weight-bold">More Coming Soon!</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -166,7 +213,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
@@ -227,6 +274,24 @@
           }
         });
       });
+    </script>
+
+    <!-- Script slides the inner-project-div's out of view on page load -->
+
+    <script>
+      $(document).ready(function () {
+        $('.inner-project-div').slideUp();
+      })
+    </script>
+
+    <!-- This allows the inner-project-div to slide up when that div is hovered over, and slides back down when not hovered over -->
+
+    <script>
+      $(document).ready(function(){
+        $('.project').hover(function() {
+          $(this).find('.inner-project-div').slideToggle('fast');
+        })
+      })
     </script>
 
   </body>
