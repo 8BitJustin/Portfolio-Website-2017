@@ -275,10 +275,6 @@ h1:first-child {
 	font-size: 2.3em;
 }
 
-.chron-para-1 {
-	font-size: 1.4em;
-}
-
 .btn-outline-light:hover {
 	color: #2f4e6f;
 }
@@ -295,15 +291,15 @@ h1:first-child {
 
 	.chron-name {
 		margin-top: 20px;
-		font-size: 1.7em;
-	}
-
-	.chron-para-1 {
-		font-size: 1.3em;
+		font-size: 1.4em;
 	}
 
 	.chron-para-2, .chron-para-3 {
 		font-size: 0.8em;
+	}
+
+	#btn-github, #btn-resume, #btn-contact {
+		font-size: .8em;
 	}
 
 }
@@ -431,7 +427,7 @@ h1:first-child {
 	}
 
 	.venture-description {
-		margin-top: 150px;
+		margin-top: 280px;
 	}
 
 	.project {
@@ -463,8 +459,9 @@ h1:first-child {
 }
 
 .connect-header {
-		font-size: 2.3em;
-	}
+	font-size: 2.3em;
+	border-bottom: 2px solid #E15119;
+}
 
 #link {
 	padding: 0 30px;
