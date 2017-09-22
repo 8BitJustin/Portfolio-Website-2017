@@ -298,6 +298,14 @@ h1:first-child {
 		font-size: 0.8em;
 	}
 
+	.chron-para-2 {
+		margin-bottom: 16px !important;
+	}
+
+	.chron-para-3 {
+		padding-top: 0 !important;
+	}
+
 	#btn-github, #btn-resume, #btn-contact {
 		font-size: .8em;
 	}
@@ -424,6 +432,7 @@ h1:first-child {
 
 	.vent-para {
 		font-size: 0.7em;
+		margin-bottom: 20px !important;
 	}
 
 	.venture-description {
@@ -543,14 +552,18 @@ color: white !important;
 @media (max-width: 767px) {
 	.connect-header {
 		font-size: 1.5em;
+		margin-top: 40px;
 	}
 
 	.con-para {
 		font-size: 0.7em;
+		padding-bottom: 20px !important;
+		margin-bottom: 0;
 	}
 
 	.connect-icons {
 		font-size: 0.7em;
+		padding-bottom: 20px !important;
 	}
 
 	.email-input, .message-input, .submit-div {
