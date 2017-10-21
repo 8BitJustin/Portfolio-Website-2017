@@ -92,6 +92,12 @@ html, body {
 	background-repeat: no-repeat;
 }
 
+/*Current*/
+
+.current {
+	background-color: #C8D7E3;
+}
+
 /*Ventures*/
 
 .ventures {
@@ -339,6 +345,62 @@ h1:first-child {
 
 	.graph-div {
 		margin-top: 100px;
+	}
+}
+
+/*Current*/
+
+.current {
+	color: #485f72;
+}
+
+.current-container {
+	height: 100vh;
+}
+
+.current-header {
+	font-size: 2.3em;
+	border-bottom: 2px solid #E15119;
+}
+
+.badge-header {
+	font-size: 2em;
+}
+
+.badge-text {
+	font-size: 1em;
+}
+
+.track-header {
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+.track {
+	color: #C25975 !important;
+}
+
+.track a {
+	text-decoration: none;
+}
+
+@media (max-width: 991px) {
+
+	.current-header {
+		font-size: 1.5em;
+	}
+
+	.badge-header {
+		font-size: 1.5em;
+	}
+
+	.badge-text {
+		font-size: .8em;
+	}
+
+	.track-header {
+		font-size: 1.3em;
+		margin-top: 30px;
 	}
 }
 
