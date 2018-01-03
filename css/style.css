@@ -434,7 +434,7 @@ h1:first-child {
 
 .slider {
   display: flex;
-  width: 300%; /*Increase 100% every project added*/
+  width: 400%; /*Increase 100% every project added*/
   height: 300px;
 }
 
@@ -493,6 +493,13 @@ h1:first-child {
 	background-image: url('../img/assistance_site_02.png');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#project-four {
+	background-image: url('../img/rrPizza.png');
+	background-size: cover;
+	background-position: top;
 	background-repeat: no-repeat;
 }
 
